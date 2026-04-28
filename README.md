@@ -20,3 +20,16 @@ graph LR
     E -.-> C
     E -.-> D
     end
+
+🛠️ Tech Stack
+Orchestrator: Apache Airflow
+
+Containerization: Docker & Docker Compose
+
+Data Processing: Python (GeoPandas, SQLAlchemy, Requests)
+
+Database: PostgreSQL + PostGIS
+
+
+📚 Learning Journey
+Berisi kumpulan latihan, catatan, dan proyek kecil selama mengikuti kursus Udemy: Data Engineering Pemula.
