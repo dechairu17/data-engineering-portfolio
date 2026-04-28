@@ -1,0 +1,406 @@
+[2026-04-27T19:36:17.463+0000] {processor.py:161} INFO - Started process (PID=459) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:36:17.465+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:36:17.467+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:36:17.467+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:36:17.586+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:36:17.561+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:36:17.595+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:36:17.627+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.169 seconds
+[2026-04-27T19:36:48.244+0000] {processor.py:161} INFO - Started process (PID=475) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:36:48.246+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:36:48.248+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:36:48.248+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:36:48.302+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:36:48.291+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:36:48.306+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:36:48.328+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.090 seconds
+[2026-04-27T19:36:49.491+0000] {processor.py:161} INFO - Started process (PID=486) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:36:49.493+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:36:49.496+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:36:49.496+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:36:49.590+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:36:49.579+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:36:49.594+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:36:49.618+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.134 seconds
+[2026-04-27T19:36:49.713+0000] {processor.py:161} INFO - Started process (PID=491) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:36:49.715+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:36:49.717+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:36:49.717+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:36:49.776+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:36:49.763+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:36:49.780+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:36:49.802+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.096 seconds
+[2026-04-27T19:36:49.897+0000] {processor.py:161} INFO - Started process (PID=496) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:36:49.898+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:36:49.900+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:36:49.900+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:36:49.941+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:36:49.933+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:36:49.944+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:36:49.963+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.071 seconds
+[2026-04-27T19:37:20.426+0000] {processor.py:161} INFO - Started process (PID=512) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:37:20.428+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:37:20.431+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:37:20.431+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:37:20.500+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:37:20.491+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:37:20.502+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:37:20.526+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.104 seconds
+[2026-04-27T19:37:51.065+0000] {processor.py:161} INFO - Started process (PID=528) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:37:51.067+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:37:51.070+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:37:51.070+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:37:51.188+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:37:51.165+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:37:51.194+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:37:51.227+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.170 seconds
+[2026-04-27T19:38:21.446+0000] {processor.py:161} INFO - Started process (PID=538) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:38:21.447+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:38:21.449+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:38:21.449+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:38:21.493+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:38:21.484+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:38:21.497+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:38:21.532+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.090 seconds
+[2026-04-27T19:38:51.797+0000] {processor.py:161} INFO - Started process (PID=554) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:38:51.799+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:38:51.801+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:38:51.801+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:38:51.858+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:38:51.849+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:38:51.862+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:38:51.880+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.088 seconds
+[2026-04-27T19:39:22.051+0000] {processor.py:161} INFO - Started process (PID=570) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:39:22.054+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:39:22.058+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:39:22.057+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:39:22.109+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:39:22.101+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:39:22.113+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:39:22.134+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.103 seconds
+[2026-04-27T19:39:52.813+0000] {processor.py:161} INFO - Started process (PID=586) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:39:52.816+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:39:52.823+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:39:52.821+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:39:52.891+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:39:52.878+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:39:52.895+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:39:52.922+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.123 seconds
+[2026-04-27T19:40:05.444+0000] {processor.py:161} INFO - Started process (PID=597) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:40:05.447+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:40:05.451+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:40:05.450+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:40:05.560+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:40:05.539+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:40:05.563+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:40:05.590+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.151 seconds
+[2026-04-27T19:40:35.934+0000] {processor.py:161} INFO - Started process (PID=613) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:40:35.936+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:40:35.943+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:40:35.943+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:40:36.076+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:40:36.060+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:40:36.082+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:40:36.116+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.201 seconds
+[2026-04-27T19:41:06.279+0000] {processor.py:161} INFO - Started process (PID=629) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:41:06.285+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:41:06.288+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:41:06.287+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:41:06.310+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:41:06.306+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:41:06.311+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:41:06.332+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.058 seconds
+[2026-04-27T19:41:36.586+0000] {processor.py:161} INFO - Started process (PID=645) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:41:36.588+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:41:36.590+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:41:36.590+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:41:36.648+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:41:36.637+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:41:36.651+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:41:36.677+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.098 seconds
+[2026-04-27T19:42:06.968+0000] {processor.py:161} INFO - Started process (PID=661) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:42:06.969+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:42:06.972+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:42:06.972+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:42:07.046+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:42:07.039+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:42:07.049+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:42:07.067+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.109 seconds
+[2026-04-27T19:42:37.392+0000] {processor.py:161} INFO - Started process (PID=677) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:42:37.393+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:42:37.397+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:42:37.396+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:42:37.466+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:42:37.452+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:42:37.472+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:42:37.499+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.114 seconds
+[2026-04-27T19:43:07.813+0000] {processor.py:161} INFO - Started process (PID=696) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:43:07.815+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:43:07.818+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:43:07.818+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:43:07.914+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:43:07.901+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:43:07.918+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:43:07.944+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.140 seconds
+[2026-04-27T19:43:38.201+0000] {processor.py:161} INFO - Started process (PID=712) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:43:38.203+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:43:38.206+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:43:38.206+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:43:38.250+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:43:38.241+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:43:38.252+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:43:38.273+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.076 seconds
+[2026-04-27T19:44:08.465+0000] {processor.py:161} INFO - Started process (PID=728) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:44:08.467+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:44:08.469+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:44:08.469+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:44:08.511+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:44:08.503+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:44:08.514+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:44:08.541+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.082 seconds
+[2026-04-27T19:44:38.797+0000] {processor.py:161} INFO - Started process (PID=751) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:44:38.799+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:44:38.802+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:44:38.801+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:44:38.846+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:44:38.839+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:44:38.849+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:44:38.871+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.080 seconds
+[2026-04-27T19:45:09.101+0000] {processor.py:161} INFO - Started process (PID=783) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:45:09.103+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:45:09.106+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:45:09.105+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:45:09.147+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:45:09.139+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:45:09.152+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:45:09.176+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.080 seconds
+[2026-04-27T19:45:39.467+0000] {processor.py:161} INFO - Started process (PID=801) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:45:39.468+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:45:39.470+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:45:39.470+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:45:39.509+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:45:39.499+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:45:39.511+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:45:39.536+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.074 seconds
+[2026-04-27T19:46:09.921+0000] {processor.py:161} INFO - Started process (PID=818) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:46:09.923+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:46:09.926+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:46:09.926+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:46:10.026+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:46:10.007+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:46:10.032+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:46:10.060+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.150 seconds
+[2026-04-27T19:46:40.347+0000] {processor.py:161} INFO - Started process (PID=870) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:46:40.349+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:46:40.352+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:46:40.352+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:46:40.408+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:46:40.397+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:46:40.411+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:46:40.434+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.096 seconds
+[2026-04-27T19:47:10.682+0000] {processor.py:161} INFO - Started process (PID=909) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:47:10.684+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:47:10.685+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:47:10.685+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:47:10.703+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:47:10.699+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:47:10.704+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:47:10.728+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.051 seconds
+[2026-04-27T19:47:41.103+0000] {processor.py:161} INFO - Started process (PID=938) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:47:41.104+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:47:41.107+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:47:41.106+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:47:41.199+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:47:41.180+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:47:41.212+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:47:41.248+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.150 seconds
+[2026-04-27T19:48:11.346+0000] {processor.py:161} INFO - Started process (PID=967) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:48:11.348+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:48:11.351+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:48:11.350+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:48:11.397+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:48:11.389+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:48:11.401+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:48:11.421+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.081 seconds
+[2026-04-27T19:48:41.829+0000] {processor.py:161} INFO - Started process (PID=989) to work on /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:48:41.831+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_to_postgis.py for tasks to queue
+[2026-04-27T19:48:41.832+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:48:41.832+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:48:41.877+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:48:41.868+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/load_to_postgis.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_to_postgis.py", line 1, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:48:41.879+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_to_postgis.py
+[2026-04-27T19:48:41.902+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_to_postgis.py took 0.078 seconds

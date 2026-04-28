@@ -1,0 +1,42 @@
+services:
+  # 1. Database dengan Dukungan Geospatial
+  postgis:
+    image: postgis/postgis:13-3.3
+    environment:
+      - POSTGRES_USER=airflow
+      - POSTGRES_PASSWORD=airflow
+      - POSTGRES_DB=airflow
+    ports:
+      - "5433:5432" # DIUBAH: Dari 5432:5432 menjadi 5433:5432
+    volumes:
+      - postgis-data:/var/lib/postgresql/data
+      - ./scripts/init-postgis.sql:/docker-entrypoint-initdb.d/init-postgis.sql
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 10s
+      retries: 5
+
+  # 2. Apache Airflow
+  airflow:
+    image: apache/airflow:2.9.2
+    depends_on:
+      postgis:
+        condition: service_healthy
+    environment:
+      # PERHATIKAN: Di sini tetap pakai port 5432 karena Airflow bicara antar container
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgis/airflow
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+    command: >
+      bash -c "
+      pip install geopandas shapely pyogrio sqlalchemy geoalchemy2 requests && 
+      airflow db migrate && 
+      airflow standalone"
+
+volumes:
+  postgis-data:

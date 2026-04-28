@@ -1,0 +1,39 @@
+services:
+  airflow:
+    image: apache/airflow:2.9.2
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      # Airflow tetap menggunakan database 'airflow' untuk sistemnya
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./airflow:/opt/airflow
+    command: >
+      bash -c "rm -f /opt/airflow/airflow-webserver.pid && airflow db migrate && airflow standalone"
+
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow # Database utama (untuk sistem Airflow)
+    volumes:
+      - postgres-db-volume:/var/lib/postgresql/data
+      # MOUNT SCRIPT INI: Agar database project_db otomatis terbuat
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 10s
+      retries: 5
+      start_period: 5s
+    restart: always
+    ports:
+      - "5432:5432"
+
+volumes:
+  postgres-db-volume:

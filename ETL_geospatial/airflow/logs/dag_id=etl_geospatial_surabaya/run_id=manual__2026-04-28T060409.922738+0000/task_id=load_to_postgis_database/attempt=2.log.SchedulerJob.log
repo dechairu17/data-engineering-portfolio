@@ -1,0 +1,1 @@
+[2026-04-28T06:09:19.796+0000] {scheduler_job_runner.py:769} ERROR - Executor reports task instance <TaskInstance: etl_geospatial_surabaya.load_to_postgis_database manual__2026-04-28T06:04:09.922738+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

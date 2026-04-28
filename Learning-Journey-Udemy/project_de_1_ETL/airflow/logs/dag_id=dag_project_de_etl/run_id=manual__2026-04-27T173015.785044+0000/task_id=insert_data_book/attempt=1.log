@@ -1,0 +1,518 @@
+[2026-04-27T17:30:21.242+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-04-27T17:30:21.266+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_project_de_etl.insert_data_book manual__2026-04-27T17:30:15.785044+00:00 [queued]>
+[2026-04-27T17:30:21.274+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_project_de_etl.insert_data_book manual__2026-04-27T17:30:15.785044+00:00 [queued]>
+[2026-04-27T17:30:21.275+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-04-27T17:30:21.286+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): insert_data_book> on 2026-04-27 17:30:15.785044+00:00
+[2026-04-27T17:30:21.293+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_project_de_etl', 'insert_data_book', 'manual__2026-04-27T17:30:15.785044+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl.py', '--cfg-path', '/tmp/tmpzbrjcnli']
+[2026-04-27T17:30:21.294+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=341) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-04-27T17:30:21.295+0000] {standard_task_runner.py:91} INFO - Job 15: Subtask insert_data_book
+[2026-04-27T17:30:21.296+0000] {standard_task_runner.py:63} INFO - Started process 342 to run task
+[2026-04-27T17:30:21.405+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_project_de_etl.insert_data_book manual__2026-04-27T17:30:15.785044+00:00 [running]> on host d54136ac257b
+[2026-04-27T17:30:21.512+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='dimas' AIRFLOW_CTX_DAG_ID='dag_project_de_etl' AIRFLOW_CTX_TASK_ID='insert_data_book' AIRFLOW_CTX_EXECUTION_DATE='2026-04-27T17:30:15.785044+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-27T17:30:15.785044+00:00'
+[2026-04-27T17:30:21.513+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-04-27T17:30:21.542+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:21.557+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Fundamentals of Data Engineering', 'Joe Reis, Matt Housley', 2022)
+[2026-04-27T17:30:21.570+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:21.581+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:21.596+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('NASA/DoD aerospace knowledge diffusion research project', 'Thomas E. Pinelli', 1990)
+[2026-04-27T17:30:21.602+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:21.611+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:21.624+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ("Ender's Game", 'Orson Scott Card', 1985)
+[2026-04-27T17:30:21.630+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:21.644+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:21.660+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Pride and Prejudice', 'Jane Austen', 1813)
+[2026-04-27T17:30:21.663+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:21.677+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:21.694+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Financial audit', 'United States. General Accounting Office', 1943)
+[2026-04-27T17:30:21.700+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:21.713+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:21.731+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Physics for scientists and engineers', 'Paul A. Tipler, Gene Mosca', 1990)
+[2026-04-27T17:30:21.738+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:21.750+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:21.769+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data engineering', 'Tom Gilb', 1976)
+[2026-04-27T17:30:21.776+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:21.787+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:21.803+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Advances in Computers, Volume 49 (Advances in Computers)', 'Marvin V. Zelkowitz, Marshall C. Yovits', 1995)
+[2026-04-27T17:30:21.809+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:21.819+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:21.836+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering', 'Yupo Chan', 2010)
+[2026-04-27T17:30:21.842+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:21.854+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:21.872+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering', 'Brian Shive', 2013)
+[2026-04-27T17:30:21.877+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:21.888+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:21.901+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering', 'Fla.) International Conference on Data Engineering (14th : 1998 : Orlando', 1998)
+[2026-04-27T17:30:21.905+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:21.913+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:21.927+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Starlight Data Engineer', 'Future Point Systems Inc., Future Point Systems Inc. Staff', 2010)
+[2026-04-27T17:30:21.932+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:21.941+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:21.953+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Engineering mechanics', 'J. L. Meriam, L. G. Kraige, J.L. Meriam, L.G. Kraige', 1978)
+[2026-04-27T17:30:21.957+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:21.968+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.006+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Starlight Data Engineer', 'Future Systems', 2013)
+[2026-04-27T17:30:22.015+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.026+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.038+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Starlight Data Engineer', 'Future Point Systems, Inc., Inc.', 2011)
+[2026-04-27T17:30:22.044+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.057+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.076+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering Design Patterns', 'Amit Kulkarni', 2025)
+[2026-04-27T17:30:22.082+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.093+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.109+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering with Alteryx', 'Paul Houghton', 2022)
+[2026-04-27T17:30:22.115+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.125+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.137+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering and Data Science', 'Aynur Unal, Kukatlapalli Pradeep Kumar, Vinay Jha Pillai, Hari Murthy, M. Niranjanamurthy', 2022)
+[2026-04-27T17:30:22.141+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.149+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.164+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Snowflake Data Engineering', 'Maja Ferle', 2025)
+[2026-04-27T17:30:22.168+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.178+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.190+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Azure Data Engineering', 'Richard L. Nuckolls', 2020)
+[2026-04-27T17:30:22.195+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.203+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.218+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering Cookbook', 'Yassine MOUSAIF', 2022)
+[2026-04-27T17:30:22.222+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.232+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.246+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Azure Data Engineer Associate Certification Guide', 'Newton Alex', 2022)
+[2026-04-27T17:30:22.250+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.259+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.271+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering Design Patterns', 'Bartosz Konieczny', 2025)
+[2026-04-27T17:30:22.277+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.285+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.298+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Financial Data Engineering', 'Tamer Khraisha', 2024)
+[2026-04-27T17:30:22.302+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.311+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.325+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering', 'Olaf Wolkenhauer', 2004)
+[2026-04-27T17:30:22.333+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.342+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.353+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering', 'Gerard Blokdyk', 2017)
+[2026-04-27T17:30:22.358+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.365+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.376+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Computer Networks', 'Andrew S. Tanenbaum, John David Wetherall, David J. Wetherall, Nickolas Feamster, David Wetherall, James F. Kurose, Keith W. Ross', 1981)
+[2026-04-27T17:30:22.380+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.387+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.396+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering', 'Olaf Wolkenhauer', 2001)
+[2026-04-27T17:30:22.400+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.407+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.418+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data engineering', 'Olaf Wolkenhauer', 2001)
+[2026-04-27T17:30:22.422+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.429+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.453+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering : 3rd', 'N/A', 1987)
+[2026-04-27T17:30:22.457+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.466+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.478+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering on Azure', 'Vlad Riscutia', 2021)
+[2026-04-27T17:30:22.481+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.491+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.516+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Engineering sciences data', 'N/A', 1980)
+[2026-04-27T17:30:22.524+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.542+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.560+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering for Beginners', 'Chisom Nwokwu', 2025)
+[2026-04-27T17:30:22.567+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.578+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.616+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Becoming a Data Engineer', 'Laura La Bella', 2017)
+[2026-04-27T17:30:22.626+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.639+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.663+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering for Cybersecurity', 'James Bonifield', 2025)
+[2026-04-27T17:30:22.677+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.688+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.710+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('IEEE transactions on knowledge and data engineering', 'Institute of Electrical and Electronics Engineers', 1989)
+[2026-04-27T17:30:22.723+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.734+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.757+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Multimedia data engineering applications and processing', 'Shu-Ching Chen, Mei-Ling Shyu', 2013)
+[2026-04-27T17:30:22.775+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.793+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.820+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data engineering', 'International Conference on Data Engineering (1st 1984 Los Angeles, Calif.)', 1984)
+[2026-04-27T17:30:22.830+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.841+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.857+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Principles of Data Engineering', 'Peter Fein', 2022)
+[2026-04-27T17:30:22.867+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.881+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.900+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Hacking for Dummies', 'Kevin Beaver, Jutta Schmidt', 2004)
+[2026-04-27T17:30:22.908+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.921+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.939+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data, Engineering and Applications', 'Rajesh Kumar Shukla, Jitendra Agrawal, Sanjeev Sharma, Geetam Singh Tomer', 2019)
+[2026-04-27T17:30:22.945+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.955+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:22.975+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering for Data-Driven Marketing', 'Balamurugan Baluswamy, Veena Grover, M. K. Nallakaruppan, Vijay Anand Rajasekaran, Mariofanna Milanova', 2025)
+[2026-04-27T17:30:22.982+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:22.994+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.032+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Test Data Engineering', 'Kojiro Shojima', 2022)
+[2026-04-27T17:30:23.041+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.056+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.085+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('14th International Conference on Data Engineering', 'International Conference on Data Engineering (14th 1998 Orlando, Fla.)', 1998)
+[2026-04-27T17:30:23.093+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.102+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.120+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering and Data Science for Babies', 'Data Babee', 2021)
+[2026-04-27T17:30:23.134+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.150+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.169+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Ground-water site inventory data for selected wells on or near the Idaho National Engineering Laboratory, 1949 through 1982', 'N/A', 1984)
+[2026-04-27T17:30:23.177+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.189+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.204+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering 4. 0', 'Herbert Weber', 2021)
+[2026-04-27T17:30:23.218+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.234+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.252+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Intelligence Science and Big Data Engineering. Visual Data Engineering', 'Zhen Cui, Jinshan Pan, Shanshan Zhang, Liang Xiao, Jian Yang', 2019)
+[2026-04-27T17:30:23.264+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.280+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.296+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data science from scratch', 'Joel Grus', 2015)
+[2026-04-27T17:30:23.303+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.314+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.332+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Artificial intelligence', 'Stuart J. Russell, Peter Norvig', 1994)
+[2026-04-27T17:30:23.338+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.349+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.372+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('AWS Certified Data Engineer Study Guide', 'Syed Humair, Chenjerai Gumbo, Adam Gatt, Asif Abbasi, Lakshmi Nair', 2024)
+[2026-04-27T17:30:23.379+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.390+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.408+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('17th International Conference on Data Engineering', 'International Conference on Data Engineering (17th 2001 Heidelberg, Germany)', 2001)
+[2026-04-27T17:30:23.415+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.428+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.448+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Artificial Intelligence and Multimedia Data Engineering', 'Suman Kumar Swarnkar;', 2023)
+[2026-04-27T17:30:23.456+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.469+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.494+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Azure Data Engineering Cookbook', 'Nagaraj Venkatesan, Ahmad Osama', 2021)
+[2026-04-27T17:30:23.502+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.514+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.533+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Knowledge And Data Engineering Exchange', 'Calif.) IEEE Knowledge and Data Engineering Exchange Workshop (1st : 1997 : Newport Beach', 1998)
+[2026-04-27T17:30:23.542+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.554+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.571+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering for Smart Systems', 'Priyadarsi Nanda, Vivek Kumar Verma, Sumit Srivastava, Rohit Kumar Gupta, Arka Prokash Mazumdar', 2021)
+[2026-04-27T17:30:23.576+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.585+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.597+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Intelligent data engineering and automated learning', 'IDEAL 2003 (international conference) (4th 2003 Hong Kong, China)', 2003)
+[2026-04-27T17:30:23.602+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.611+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.626+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Artificial Intelligence and Multimedia Data Engineering', 'Suman Kumar Swarnkar, Sapna Singh Kshatri, Virendra Kumar Swarnkar', 2023)
+[2026-04-27T17:30:23.630+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.642+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.657+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Eighth International Conference on Data Engineering', 'N/A', 1992)
+[2026-04-27T17:30:23.662+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.675+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.689+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Computer networking', 'James F. Kurose, Keith W. Ross', 1900)
+[2026-04-27T17:30:23.694+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.706+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.720+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering and Intelligent Computing', 'Suresh Chandra Satapathy, Vikrant Bhateja, K. Srujan Raju, B. Janakiramaiah', 2017)
+[2026-04-27T17:30:23.725+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.735+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.748+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Computer science', 'J. Glenn Brookshear, Brookshear', 1985)
+[2026-04-27T17:30:23.753+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.764+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.777+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('18th International Conference on Data Engineering', 'International Conference on Data Engineering (18th 2002 Dan Jose, California)', 2002)
+[2026-04-27T17:30:23.784+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.793+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.809+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering and Foundation for Big Data', 'N. Sandeep Chaitanya, Ravi Kanth Motupalli', 2025)
+[2026-04-27T17:30:23.816+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.827+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.844+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering with AWS', 'Gareth Eagar', 2021)
+[2026-04-27T17:30:23.850+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.861+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.876+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering with AWS Cookbook', 'Trâm Ng&#7885;c Ph&#7841;m, Gonzalo Herreros González, Viquar Khan, Huda Nofal', 2024)
+[2026-04-27T17:30:23.882+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.893+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.908+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Google Professional Data Engineer', 'Jason Hoffman', 2020)
+[2026-04-27T17:30:23.915+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.927+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.945+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Supervised and Unsupervised Data Engineering for Medical Data', 'Charu Gupta, Amita Jain, M. Niranjanamurthy, Devendra K. Tayal', 2024)
+[2026-04-27T17:30:23.950+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.962+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:23.981+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('SAS 9.1 Scalable Performance Data Engine', 'SAS Institute', 2004)
+[2026-04-27T17:30:23.986+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:23.998+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.013+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('SAS 9.2 Scalable Performance Data engine', 'SAS Institute', 2009)
+[2026-04-27T17:30:24.018+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.028+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.045+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('SAS 9.1 Scalable Performance Data Engine', 'N/A', 2004)
+[2026-04-27T17:30:24.050+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.061+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.076+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('16th International Conference on Data Engineering', 'International Conference on Data Engineering (16th 2000 San Diego, Calif.)', 2000)
+[2026-04-27T17:30:24.080+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.091+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.104+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering with Python', 'Paul Crickard', 2020)
+[2026-04-27T17:30:24.109+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.119+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.135+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Object-Oriented Software Engineering', 'Ivar Jacobson', 1992)
+[2026-04-27T17:30:24.141+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.150+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.165+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Computational Methods and Data Engineering', 'Vijendra Singh, Vijayan K. Asari, Sanjay Kumar, R. B. Patel', 2020)
+[2026-04-27T17:30:24.172+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.183+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.201+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('17th International Conference on Data Engineering', 'International Conference on Data Engineering', 2001)
+[2026-04-27T17:30:24.207+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.219+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.237+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Introduction to Algorithms', 'Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein', 1990)
+[2026-04-27T17:30:24.244+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.256+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.273+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Recent Progress in Data Engineering and Internet Technology', 'Ford Lumban Gaol', 2012)
+[2026-04-27T17:30:24.279+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.290+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.307+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Thermodynamic modeling and materials data engineering', 'J. H. Westbrook', 1998)
+[2026-04-27T17:30:24.312+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.326+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.340+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering Complete Self-Assessment Guide', 'Gerardus Blokdyk', 2017)
+[2026-04-27T17:30:24.345+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.358+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.372+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Thermodynamic Modeling and Materials Data Engineering', 'Jean-Pierre Caliste', 1998)
+[2026-04-27T17:30:24.378+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.388+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.402+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Thermodynamic Modeling and Materials Data Engineering', 'J.-P Caliste, A. Truyol, Jack H. Westbrook', 2012)
+[2026-04-27T17:30:24.408+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.420+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.437+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Technical Data (Engine Diagnostics, Testing & Tuning)', 'N/A', 1999)
+[2026-04-27T17:30:24.443+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.456+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.475+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering and Communication Technology', 'K. Srujan Raju, Roman Senkerik, Satya Prasad Lanka, V. Rajagopal', 2020)
+[2026-04-27T17:30:24.483+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.494+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.510+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Ninth International Conference on Data Engineering', 'Gesellschaft für Informatik.', 1993)
+[2026-04-27T17:30:24.515+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.526+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.541+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Proceedings of the 19th International Conference on Data Engineering', 'International Conference on Data Engineering', 2003)
+[2026-04-27T17:30:24.550+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.560+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.574+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('15th International Conference on Data Engineering', 'N/A', 1999)
+[2026-04-27T17:30:24.580+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.591+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.606+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Proceedings of the 21st International Conference on Data Engineering', 'International Conference on Data Engineering', 2005)
+[2026-04-27T17:30:24.616+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.631+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.648+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Proceedings of the 20th International Conference on Data Engineering', 'International Conference on Data Engineering', 2004)
+[2026-04-27T17:30:24.654+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.668+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.680+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('[Pump data', 'Economy Pumps', 1938)
+[2026-04-27T17:30:24.686+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.698+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.711+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('16th International Conference on Data Engineering', 'International Conference on Data Engineering', 2000)
+[2026-04-27T17:30:24.716+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.726+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.742+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Google Cloud Platform for Data Engineering', 'Alasdair Gilchrist', 2019)
+[2026-04-27T17:30:24.749+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.762+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.791+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Essential SQL Skills for Data Scientists and Data Engineers', 'Venkatesh Pappakrishnan', 2022)
+[2026-04-27T17:30:24.796+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.805+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.820+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering with AWS', 'Sanjiv Kumar Jha', 2025)
+[2026-04-27T17:30:24.826+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.836+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.851+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering with Apache Spark', 'Scott Haines', 2022)
+[2026-04-27T17:30:24.858+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.868+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.882+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Data Engineering Skills - Hadoop Shell', 'Neeraj Malhotra', 2018)
+[2026-04-27T17:30:24.890+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.899+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.916+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Research Issues in Data Engineering (Ride 2000)', 'Institute of Electrical and Electronics Engineers', 2000)
+[2026-04-27T17:30:24.923+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.934+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.948+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Proceedings', 'International Conference on Data Engineering (9th 1993 Vienna, Austria)', 1993)
+[2026-04-27T17:30:24.957+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.967+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:24.981+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('MCA Microsoft Certified Associate Data Engineer Study Guide', 'Benjamin Perkins', 2023)
+[2026-04-27T17:30:24.987+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:24.996+0000] {base.py:84} INFO - Using connection ID 'books_connection' for task execution.
+[2026-04-27T17:30:25.008+0000] {sql.py:487} INFO - Running statement: 
+        INSERT INTO books (title, author_name, first_publish_year) 
+        VALUES (%s, %s, %s);, parameters: ('Official Google Cloud Certified Professional Data Engineer Study Guide', 'Dan Sullivan', 2020)
+[2026-04-27T17:30:25.013+0000] {sql.py:496} INFO - Rows affected: 1
+[2026-04-27T17:30:25.016+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-04-27T17:30:25.017+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-04-27T17:30:25.024+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_project_de_etl, task_id=insert_data_book, run_id=manual__2026-04-27T17:30:15.785044+00:00, execution_date=20260427T173015, start_date=20260427T173021, end_date=20260427T173025
+[2026-04-27T17:30:25.068+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-04-27T17:30:25.110+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-04-27T17:30:25.116+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

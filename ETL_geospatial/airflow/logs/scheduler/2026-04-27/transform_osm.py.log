@@ -1,0 +1,350 @@
+[2026-04-27T19:36:17.481+0000] {processor.py:161} INFO - Started process (PID=462) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:36:17.485+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:36:17.487+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:36:17.487+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:36:18.138+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:36:18.123+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:36:18.144+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:36:18.167+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.690 seconds
+[2026-04-27T19:36:48.436+0000] {processor.py:161} INFO - Started process (PID=480) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:36:48.440+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:36:48.443+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:36:48.443+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:36:48.873+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:36:48.855+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:36:48.876+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:36:48.898+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.467 seconds
+[2026-04-27T19:37:19.342+0000] {processor.py:161} INFO - Started process (PID=506) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:37:19.344+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:37:19.346+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:37:19.346+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:37:19.699+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:37:19.678+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:37:19.711+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:37:19.742+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.405 seconds
+[2026-04-27T19:37:50.046+0000] {processor.py:161} INFO - Started process (PID=522) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:37:50.052+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:37:50.057+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:37:50.057+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:37:50.377+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:37:50.367+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:37:50.384+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:37:50.402+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.384 seconds
+[2026-04-27T19:38:21.460+0000] {processor.py:161} INFO - Started process (PID=541) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:38:21.461+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:38:21.464+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:38:21.464+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:38:21.749+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:38:21.739+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:38:21.752+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:38:21.774+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.319 seconds
+[2026-04-27T19:38:51.943+0000] {processor.py:161} INFO - Started process (PID=559) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:38:51.944+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:38:51.946+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:38:51.946+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:38:52.217+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:38:52.204+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:38:52.222+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:38:52.257+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.320 seconds
+[2026-04-27T19:39:23.086+0000] {processor.py:161} INFO - Started process (PID=575) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:39:23.087+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:39:23.090+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:39:23.089+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:39:23.425+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:39:23.411+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:39:23.429+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:39:23.451+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.370 seconds
+[2026-04-27T19:39:53.950+0000] {processor.py:161} INFO - Started process (PID=591) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:39:53.953+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:39:53.957+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:39:53.956+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:39:54.219+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:39:54.208+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:39:54.222+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:39:54.239+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.306 seconds
+[2026-04-27T19:40:24.509+0000] {processor.py:161} INFO - Started process (PID=607) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:40:24.511+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:40:24.514+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:40:24.513+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:40:24.832+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:40:24.823+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:40:24.837+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:40:24.856+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.353 seconds
+[2026-04-27T19:40:55.585+0000] {processor.py:161} INFO - Started process (PID=623) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:40:55.586+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:40:55.589+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:40:55.588+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:40:55.913+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:40:55.898+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:40:55.917+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:40:55.939+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.360 seconds
+[2026-04-27T19:41:26.204+0000] {processor.py:161} INFO - Started process (PID=639) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:41:26.206+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:41:26.208+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:41:26.207+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:41:26.473+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:41:26.461+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:41:26.477+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:41:26.492+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.294 seconds
+[2026-04-27T19:41:56.599+0000] {processor.py:161} INFO - Started process (PID=655) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:41:56.601+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:41:56.603+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:41:56.603+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:41:56.919+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:41:56.907+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:41:56.924+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:41:56.947+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.354 seconds
+[2026-04-27T19:42:27.706+0000] {processor.py:161} INFO - Started process (PID=671) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:42:27.708+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:42:27.712+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:42:27.711+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:42:28.030+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:42:28.016+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:42:28.033+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:42:28.052+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.352 seconds
+[2026-04-27T19:42:59.093+0000] {processor.py:161} INFO - Started process (PID=690) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:42:59.095+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:42:59.097+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:42:59.097+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:42:59.497+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:42:59.488+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:42:59.502+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:42:59.522+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.436 seconds
+[2026-04-27T19:43:29.618+0000] {processor.py:161} INFO - Started process (PID=706) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:43:29.619+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:43:29.621+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:43:29.620+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:43:29.891+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:43:29.884+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:43:29.894+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:43:29.915+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.302 seconds
+[2026-04-27T19:44:01.003+0000] {processor.py:161} INFO - Started process (PID=722) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:44:01.004+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:44:01.007+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:44:01.006+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:44:01.334+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:44:01.325+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:44:01.338+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:44:01.355+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.360 seconds
+[2026-04-27T19:44:31.564+0000] {processor.py:161} INFO - Started process (PID=738) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:44:31.565+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:44:31.568+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:44:31.567+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:44:31.867+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:44:31.857+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:44:31.870+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:44:31.897+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.340 seconds
+[2026-04-27T19:45:02.872+0000] {processor.py:161} INFO - Started process (PID=777) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:45:02.873+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:45:02.877+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:45:02.877+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:45:03.210+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:45:03.171+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:45:03.216+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:45:03.240+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.380 seconds
+[2026-04-27T19:45:33.979+0000] {processor.py:161} INFO - Started process (PID=795) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:45:33.980+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:45:33.982+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:45:33.981+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:45:34.243+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:45:34.236+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:45:34.244+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:45:34.266+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.294 seconds
+[2026-04-27T19:46:05.341+0000] {processor.py:161} INFO - Started process (PID=812) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:46:05.343+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:46:05.346+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:46:05.346+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:46:05.659+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:46:05.653+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:46:05.662+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:46:05.680+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.344 seconds
+[2026-04-27T19:46:36.233+0000] {processor.py:161} INFO - Started process (PID=858) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:46:36.235+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:46:36.237+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:46:36.237+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:46:36.537+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:46:36.528+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:46:36.541+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:46:36.561+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.344 seconds
+[2026-04-27T19:47:07.592+0000] {processor.py:161} INFO - Started process (PID=903) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:47:07.594+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:47:07.597+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:47:07.597+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:47:07.914+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:47:07.906+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:47:07.918+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:47:07.941+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.356 seconds
+[2026-04-27T19:47:38.800+0000] {processor.py:161} INFO - Started process (PID=932) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:47:38.801+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:47:38.803+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:47:38.802+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:47:39.053+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:47:39.044+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:47:39.056+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:47:39.076+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.283 seconds
+[2026-04-27T19:48:09.256+0000] {processor.py:161} INFO - Started process (PID=961) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:48:09.257+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:48:09.260+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:48:09.259+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:48:09.621+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:48:09.610+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:48:09.624+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:48:09.648+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.397 seconds
+[2026-04-27T19:48:39.783+0000] {processor.py:161} INFO - Started process (PID=983) to work on /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:48:39.784+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_osm.py for tasks to queue
+[2026-04-27T19:48:39.786+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:48:39.786+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:48:40.129+0000] {logging_mixin.py:188} INFO - [2026-04-27T19:48:40.120+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/transform_osm.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/transform_osm.py", line 2, in <module>
+    import geopandas as gpd
+ModuleNotFoundError: No module named 'geopandas'
+[2026-04-27T19:48:40.132+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform_osm.py
+[2026-04-27T19:48:40.150+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_osm.py took 0.373 seconds

@@ -1,0 +1,41 @@
+[2026-04-28T06:20:47.980+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-04-28T06:20:48.001+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_geospatial_surabaya.load_to_postgis_database manual__2026-04-28T06:20:41.796574+00:00 [queued]>
+[2026-04-28T06:20:48.006+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_geospatial_surabaya.load_to_postgis_database manual__2026-04-28T06:20:41.796574+00:00 [queued]>
+[2026-04-28T06:20:48.007+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-04-28T06:20:48.017+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_to_postgis_database> on 2026-04-28 06:20:41.796574+00:00
+[2026-04-28T06:20:48.023+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'etl_geospatial_surabaya', 'load_to_postgis_database', 'manual__2026-04-28T06:20:41.796574+00:00', '--job-id', '40', '--raw', '--subdir', 'DAGS_FOLDER/dag_geospatial.py', '--cfg-path', '/tmp/tmppuocpd37']
+[2026-04-28T06:20:48.025+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=429) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-04-28T06:20:48.026+0000] {standard_task_runner.py:91} INFO - Job 40: Subtask load_to_postgis_database
+[2026-04-28T06:20:48.026+0000] {standard_task_runner.py:63} INFO - Started process 431 to run task
+[2026-04-28T06:20:48.116+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_geospatial_surabaya.load_to_postgis_database manual__2026-04-28T06:20:41.796574+00:00 [running]> on host 04581377e25d
+[2026-04-28T06:20:48.186+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='dimas' AIRFLOW_CTX_DAG_ID='etl_geospatial_surabaya' AIRFLOW_CTX_TASK_ID='load_to_postgis_database' AIRFLOW_CTX_EXECUTION_DATE='2026-04-28T06:20:41.796574+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-28T06:20:41.796574+00:00'
+[2026-04-28T06:20:48.187+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-04-28T06:20:48.203+0000] {logging_mixin.py:188} INFO - Membaca data dari: /opt/***/dags/modules/../health_facilities.geojson
+[2026-04-28T06:20:48.282+0000] {logging_mixin.py:188} INFO - Memasukkan data ke tabel health_facilities...
+[2026-04-28T06:20:48.369+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-04-28T06:20:48.369+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/modules/load_to_postgis.py", line 36, in load_data_to_postgis
+    conn.commit()
+    ^^^^^^^^^^^
+AttributeError: 'Connection' object has no attribute 'commit'
+[2026-04-28T06:20:48.383+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=etl_geospatial_surabaya, task_id=load_to_postgis_database, run_id=manual__2026-04-28T06:20:41.796574+00:00, execution_date=20260428T062041, start_date=20260428T062048, end_date=20260428T062048
+[2026-04-28T06:20:48.400+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 40 for task load_to_postgis_database ('Connection' object has no attribute 'commit'; 431)
+[2026-04-28T06:20:48.444+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2026-04-28T06:20:48.458+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-04-28T06:20:48.463+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

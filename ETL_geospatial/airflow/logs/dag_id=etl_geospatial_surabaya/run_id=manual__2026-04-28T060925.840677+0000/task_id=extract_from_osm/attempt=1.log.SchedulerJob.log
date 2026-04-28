@@ -1,0 +1,1 @@
+[2026-04-28T06:09:27.414+0000] {scheduler_job_runner.py:769} ERROR - Executor reports task instance <TaskInstance: etl_geospatial_surabaya.extract_from_osm manual__2026-04-28T06:09:25.840677+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

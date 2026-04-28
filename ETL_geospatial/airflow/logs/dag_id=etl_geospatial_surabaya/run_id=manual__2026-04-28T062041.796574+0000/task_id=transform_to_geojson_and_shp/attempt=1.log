@@ -1,0 +1,21 @@
+[2026-04-28T06:20:46.751+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-04-28T06:20:46.774+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_geospatial_surabaya.transform_to_geojson_and_shp manual__2026-04-28T06:20:41.796574+00:00 [queued]>
+[2026-04-28T06:20:46.782+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_geospatial_surabaya.transform_to_geojson_and_shp manual__2026-04-28T06:20:41.796574+00:00 [queued]>
+[2026-04-28T06:20:46.783+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-04-28T06:20:46.795+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_to_geojson_and_shp> on 2026-04-28 06:20:41.796574+00:00
+[2026-04-28T06:20:46.803+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'etl_geospatial_surabaya', 'transform_to_geojson_and_shp', 'manual__2026-04-28T06:20:41.796574+00:00', '--job-id', '39', '--raw', '--subdir', 'DAGS_FOLDER/dag_geospatial.py', '--cfg-path', '/tmp/tmpyp3yuerd']
+[2026-04-28T06:20:46.805+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=426) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-04-28T06:20:46.805+0000] {standard_task_runner.py:91} INFO - Job 39: Subtask transform_to_geojson_and_shp
+[2026-04-28T06:20:46.806+0000] {standard_task_runner.py:63} INFO - Started process 428 to run task
+[2026-04-28T06:20:46.886+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_geospatial_surabaya.transform_to_geojson_and_shp manual__2026-04-28T06:20:41.796574+00:00 [running]> on host 04581377e25d
+[2026-04-28T06:20:46.945+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='dimas' AIRFLOW_CTX_DAG_ID='etl_geospatial_surabaya' AIRFLOW_CTX_TASK_ID='transform_to_geojson_and_shp' AIRFLOW_CTX_EXECUTION_DATE='2026-04-28T06:20:41.796574+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-28T06:20:41.796574+00:00'
+[2026-04-28T06:20:46.947+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-04-28T06:20:47.068+0000] {raw.py:733} INFO - Created 76 records
+[2026-04-28T06:20:47.160+0000] {raw.py:733} INFO - Created 76 records
+[2026-04-28T06:20:47.166+0000] {logging_mixin.py:188} INFO - Transformasi selesai! File disimpan di folder dags.
+[2026-04-28T06:20:47.166+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-04-28T06:20:47.167+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-04-28T06:20:47.174+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=etl_geospatial_surabaya, task_id=transform_to_geojson_and_shp, run_id=manual__2026-04-28T06:20:41.796574+00:00, execution_date=20260428T062041, start_date=20260428T062046, end_date=20260428T062047
+[2026-04-28T06:20:47.224+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-04-28T06:20:47.243+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-04-28T06:20:47.248+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

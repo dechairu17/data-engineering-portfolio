@@ -1,0 +1,1 @@
+[2026-04-20T14:49:02.322+0000] {scheduler_job_runner.py:769} ERROR - Executor reports task instance <TaskInstance: dag_pertama_v03.bash_halo_task_2 manual__2026-04-20T14:47:59.190520+00:00 [queued]> finished (success) although the task says it's queued. (Info: None) Was the task killed externally?
