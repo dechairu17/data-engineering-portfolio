@@ -4,12 +4,6 @@ Selamat datang di repositori portofolio saya. Repositori ini merangkum proyek te
 
 ---
 
-# Data Engineering Portfolio 🚀
-
-Selamat datang di repositori portofolio saya. Repositori ini merangkum proyek teknis dan perjalanan belajar saya sebagai mahasiswa **Teknik Informatika Polinema**.
-
----
-
 ## 🏆 Featured Project: Surabaya Geospatial ETL Pipeline
 Pipeline otomatis untuk mengambil data fasilitas kesehatan Surabaya dari OpenStreetMap dan menyimpannya ke database PostGIS.
 
