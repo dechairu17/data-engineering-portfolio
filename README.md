@@ -20,6 +20,7 @@ graph LR
     E -.-> C
     E -.-> D
     end
+```
 
 🛠️ Tech Stack
 Orchestrator: Apache Airflow
