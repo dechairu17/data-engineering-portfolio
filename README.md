@@ -33,3 +33,4 @@ Database: PostgreSQL + PostGIS
 
 📚 Learning Journey
 Berisi kumpulan latihan, catatan, dan proyek kecil selama mengikuti kursus Udemy: Data Engineering Pemula.
+https://github.com/dechairu17/data-engineering-portfolio/tree/main/Learning-Journey-Udemy
